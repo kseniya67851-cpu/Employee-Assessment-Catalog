@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Оценка персонала — каталог инструментов</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=oKhKXSLTU-HZ_mlXxmlAhNNDzpOjHV5CTv0MP-DoQQm8nPr99FK7Rdgz0YBUw5x5pUD9cRXPE6xG3oUT4GRNGubuhVpiJlNrl8hSDuRCqtBCclZwftAhFybjdlCMzddlqTuXc1I7VzLLsSOWHUvvNFP4_M5QJ_Nhk9JriK0mBMUE4PptUt2k86ZIOFKwkMx5k7adU7T6z6LLwaYGk26ym_enFwx11Bhf8wEsstwoCakLdW_GRz-MxqXdUU-npusIbhiT8v1aGzoMDpards8ntAHnmnigYJAEPXFT7uhb7TFrZ9P5EYC-fui2Dt14rYd4bv9HyOyyl1UiAXe1Q2ZsNA" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jaGF0Z3B0LmNvbS9iYWNrZW5kLWFwaS9lc3R1YXJ5L2NvbnRlbnQ_aWQ9ZmlsZV8wMDAwMDAwMGNkNDg4MWY0YWZlZGQ5NzMwOWIyZWZkYyZmbj1vY2Vua2FfcGVyc29uYWxhX2NhdGFsb2cuaHRtbCZjZD1hdHRhY2htZW50JnRzPTQ5Njc1OSZwPWZzJmNpZD0xJnNpZz03ZWUyYjE4NTkzY2E1ZTU2MDE5NDhkYWRjY2E3MWEzOTVkMjhiNGM5MDRmYmMwNDliMzk2NmFiYjdiMDc2Y2E1JnY9MA"/><style>
+:root{
+  --bg:#f4f8f8; --card:#fff; --ink:#122426; --muted:#657577;
+  --accent:#19b7ad; --accent-dark:#0e8f88; --line:rgba(18,36,38,.10);
+  --shadow:0 18px 50px rgba(18,36,38,.08); --radius:24px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Montserrat",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+button{font:inherit}.container{width:min(1180px,calc(100% - 40px));margin:auto}
+.header{height:78px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:-.03em;font-size:18px}.nav{display:flex;gap:30px;font-size:14px}.nav a{color:var(--muted);text-decoration:none}.nav a:hover{color:var(--ink)}
+.cta{border:0;background:var(--ink);color:#fff;padding:12px 18px;border-radius:13px;cursor:pointer;transition:.25s}.cta:hover{transform:translateY(-2px);background:#203d40}
+.hero{min-height:390px;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:55px 0 45px}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--accent-dark);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+h1{font-size:clamp(48px,7vw,88px);line-height:.94;letter-spacing:-.065em;margin:17px 0 22px;max-width:760px}
+.hero p{font-size:18px;color:var(--muted);max-width:650px;margin:0}
+.visual{position:relative;height:300px;border:1px solid var(--line);border-radius:34px;background:linear-gradient(145deg,#fff,#eaf6f5);overflow:hidden;box-shadow:var(--shadow)}
+.visual:before{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:rgba(25,183,173,.15);right:-35px;top:-55px}
+.visual:after{content:"";position:absolute;width:170px;height:170px;border:1px solid rgba(25,183,173,.28);border-radius:50%;left:55px;bottom:-70px}
+.chart{position:absolute;inset:45px;display:flex;align-items:flex-end;gap:14px}
+.bar{flex:1;background:var(--accent);border-radius:12px 12px 5px 5px;opacity:.8;animation:rise .8s ease both}.bar:nth-child(1){height:35%}.bar:nth-child(2){height:55%}.bar:nth-child(3){height:45%}.bar:nth-child(4){height:76%}.bar:nth-child(5){height:92%}
+.score{position:absolute;top:32px;left:34px;font-size:54px;font-weight:800;letter-spacing:-.06em}.score small{font-size:13px;color:var(--muted);letter-spacing:0}
+@keyframes rise{from{transform:scaleY(0);transform-origin:bottom}to{transform:scaleY(1)}}
+.filters{display:flex;flex-wrap:wrap;gap:9px;margin:5px 0 28px}.filter{border:1px solid var(--line);background:#fff;color:var(--muted);padding:10px 15px;border-radius:999px;cursor:pointer;transition:.2s}.filter:hover,.filter.active{background:var(--ink);border-color:var(--ink);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding-bottom:80px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:25px;min-height:300px;display:flex;flex-direction:column;transition:.3s;box-shadow:0 5px 22px rgba(18,36,38,.025)}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(25,183,173,.35)}
+.card-top{display:flex;justify-content:space-between;align-items:start}.num{font-size:52px;line-height:1;font-weight:800;letter-spacing:-.06em;color:rgba(18,36,38,.11)}.type{font-size:11px;letter-spacing:.11em;font-weight:800;color:var(--accent-dark)}
+.card h2{font-size:26px;letter-spacing:-.035em;margin:25px 0 9px}.desc{color:var(--muted);font-size:14px;max-width:500px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.tag{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:6px 9px;color:var(--muted)}
+.card-bottom{margin-top:auto;display:flex;align-items:end;justify-content:space-between;padding-top:18px}.result{font-size:12px;color:var(--muted)}.result b{display:block;color:var(--ink);margin-top:3px;font-size:13px}.more{border:0;background:none;color:var(--accent-dark);font-weight:800;cursor:pointer;padding:7px 0}
+footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:13px}
+.modal{position:fixed;inset:0;background:rgba(10,27,29,.42);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:20px;z-index:10}.modal.open{display:flex}
+.panel{background:#fff;width:min(760px,100%);max-height:min(760px,92vh);overflow:auto;border-radius:30px;padding:34px;box-shadow:0 30px 100px rgba(0,0,0,.2);animation:modalIn .25s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+.close{float:right;border:1px solid var(--line);background:#fff;width:40px;height:40px;border-radius:50%;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0;line-height:1;font-size:22px;font-weight:400}
+.close:hover{background:#f4f8f8}
+.filter,.cta,.more{display:inline-flex;align-items:center;justify-content:center}
+.contact-card{margin:28px 0 6px;padding:22px;border:1px solid var(--line);border-radius:20px;background:#fbfdfd}
+.contact-person{display:flex;align-items:center;gap:14px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.contact-avatar{width:48px;height:48px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;flex:0 0 auto}
+.contact-person strong{display:block;font-size:16px}.contact-person span{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+.contact-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding-top:18px}
+.contact-list a{display:flex;flex-direction:column;gap:4px;text-decoration:none;color:var(--ink);padding:10px;border-radius:12px}
+.contact-list a:hover{background:#f0f8f7}
+.contact-list span{color:var(--muted);font-size:11px}.contact-list b{font-size:13px;overflow-wrap:anywhere}.panel .type{margin-top:18px}.panel h2{font-size:42px;line-height:1.05;letter-spacing:-.05em;margin:10px 0 15px}.panel .lead{font-size:17px;color:var(--muted)}.details{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:28px 0}.detail{padding:17px;border:1px solid var(--line);border-radius:17px}.detail span{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}.detail b{font-size:14px}.panel .cta{margin-top:4px}
+@media(max-width:800px){.contact-list{grid-template-columns:1fr}.container{width:min(100% - 28px,600px)}.nav{display:none}.hero{grid-template-columns:1fr;padding:35px 0}.visual{height:220px}.grid{grid-template-columns:1fr}.details{grid-template-columns:1fr}.panel h2{font-size:34px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="container header">
+  <div class="logo">Оценка персонала</div>
+  <nav class="nav"><a href="#catalog">Каталог</a><a href="#how">Как это работает</a><a href="#contacts">Контакты</a></nav>
+  <button class="cta" onclick="openContact()">Связаться со специалистом</button>
+</header>
+
+<main>
+<section class="container hero">
+  <div>
+    <div class="eyebrow">Инструменты для HR и руководителей</div>
+    <h1>Оценка<br>персонала</h1>
+    <p>Инструменты оценки компетенций, эффективности, мотивации и потенциала сотрудников.</p>
+  </div>
+  <div class="visual" aria-hidden="true">
+    <div class="score">0 – 3<small> шкала оценки</small></div>
+    <div class="chart"><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i></div>
+  </div>
+</section>
+
+<section class="container" id="catalog">
+  <div class="filters">
+    <button class="filter active" data-filter="all">Все инструменты</button>
+    <button class="filter" data-filter="interview">Интервью</button>
+    <button class="filter" data-filter="survey">Опросы</button>
+    <button class="filter" data-filter="test">Тестирование</button>
+    <button class="filter" data-filter="simulation">Симуляции</button>
+    <button class="filter" data-filter="complex">Комплексная оценка</button>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="container" id="how" style="padding:10px 0 80px">
+  <div class="eyebrow">Как это работает</div>
+  <h2 style="font-size:42px;letter-spacing:-.05em;margin:12px 0">Выбираете инструмент → проводим оценку → получаете понятный результат.</h2>
+  <p style="color:var(--muted);max-width:700px">Каждый инструмент можно использовать отдельно или включить в комплексную оценку сотрудника.</p>
+</section>
+</main>
+
+<footer id="contacts"><div class="container">Оценка персонала · Каталог инструментов оценки</div></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="panel">
+    <button class="close" onclick="closeModal()" aria-label="Закрыть">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script>
+const services = [
+ {n:"01",type:"interview",label:"ИНТЕРВЬЮ",title:"Мотивационное интервью",
+  desc:"Индивидуальная беседа с сотрудником для диагностики уровня вовлечённости и ключевых мотиваторов сотрудника, ценностных ориентиров и драйверов работы.",
+  format:"Очная / онлайн-беседа",time:"15 – 20 мин",
+  result:"Текущий статус · шкала 0 – 3 · интерпретация · рекомендации",
+  fit:"Анализ эффективности · риски выгорания · готовность к карьерным изменениям",
+  full:"Индивидуальная беседа с сотрудником для диагностики уровня вовлечённости и ключевых мотиваторов сотрудника, ценностных ориентиров и драйверов работы."},
+
+ {n:"02",type:"survey",label:"ОПРОСЫ",title:"Опросник «Мотивация к развитию»",
+  desc:"Инструмент оценки, который помогает выявить внутреннюю мотивацию к развитию и готовность жертвовать ресурсами ради освоения новых навыков.",
+  format:"Онлайн-анкетирование",time:"10 – 15 мин",
+  result:"Уровень мотивации · ключевые сценарии поведения · интерпретация",
+  fit:"ИПР · кандидаты на роль наставника · «узкие места» в обучении",
+  full:"Оценка внутренней мотивации к развитию и готовности инвестировать ресурсы в освоение новых навыков. Анализируются самостоятельность в поиске обучения, готовность к жертвам ради навыков, применимость знаний, восприятие неудач и намерение делиться опытом."},
+
+ {n:"03",type:"test",label:"ТЕСТИРОВАНИЕ",title:"Профессиональные тесты",
+  desc:"Метод оценки уровня профессиональных знаний сотрудника через стандартизированные задания.",
+  format:"Онлайн-тестирование + экспертная проверка",time:"30 – 60 мин",
+  result:"Баллы / процент / уровень · детализация по областям знаний",
+  fit:"Пробелы в знаниях · соответствие должности · планирование обучения",
+  full:"Стандартизированная оценка уровня профессиональных знаний сотрудника. Результат позволяет определить уровень компетенции и детализацию по отдельным областям знаний."},
+
+ {n:"04",type:"simulation",label:"СИМУЛЯЦИИ",title:"Оценочная бизнес-игра",
+  desc:"Комплексная симуляция рабочих или иных ситуаций, в которой участники демонстрируют профессиональные и/или корпоративные компетенции.",
+  format:"Групповая очная сессия",time:"От 4 часов · группа 6 – 10 участников",
+  result:"Профиль компетенций · зоны развития · рекомендации по развитию",
+  fit:"Корпоративные и профессиональные компетенции · лидеры · кросс-функциональные задачи · командные роли",
+  full:"Комплексная симуляция рабочих или иных ситуаций, в которой участники демонстрируют профессиональные и/или корпоративные компетенции. Наблюдатели и эксперты фиксируют поведение участников."},
+
+ {n:"05",type:"survey",label:"ОПРОСЫ",title:"Опрос 90 / 180 / 360",
+  desc:"Комплексная оценка компетенций сотрудника на основе обратной связи от руководителя, коллег, подчинённых и других участников взаимодействия.",
+  format:"Онлайн-анкетирование + аналитика",time:"1–2 недели сбор · 30 – 60 мин сессия",
+  result:"Профиль компетенций · зоны развития · рекомендации по обучению",
+  fit:"Сильные стороны · зоны развития · карьерные изменения · ИПР",
+  full:"90 – оценка руководителя; 180 – оценка руководителя и самого сотрудника; 360 – оценка руководителя, самого сотрудника, коллег и подчинённых. После сбора обратной связи проводится аналитика и обсуждение результатов с сотрудником."},
+
+ {n:"06",type:"interview",label:"ИНТЕРВЬЮ",title:"Интервью по компетенциям",
+  desc:"Структурированная беседа с сотрудником, в которой через поведенческие вопросы выявляется наличие и уровень развития корпоративных компетенций.",
+  format:"Очная / онлайн-беседа с экспертом",time:"60 – 90 мин",
+  result:"Профиль компетенций · зоны развития · рекомендации по развитию",
+  fit:"Соответствие текущей должности · карьерный рост · программы развития",
+  full:"Структурированная беседа с сотрудником, в которой через поведенческие вопросы выявляется наличие и уровень развития корпоративных компетенций."},
+
+ {n:"07",type:"survey",label:"ОПРОСЫ",title:"Чек-лист эффективности",
+  desc:"Опрос руководителя, в котором сотрудник оценивается по критериям своевременности и качества работы, полноты выполнения поручений и обязанностей, сложности задач, инициативности, проектной деятельности и командного взаимодействия.",
+  format:"Онлайн-анкета",time:"10 мин",
+  result:"Оценка 0 – 3 · профиль сильных зон · зоны развития",
+  fit:"Оценка эффективности в текущей должности при отсутствии релевантных КПЭ",
+  full:"Руководитель оценивает сотрудника по критериям: своевременность и качество, полнота выполнения поручений и функциональных обязанностей, уровень сложности задач, инициативность и проактивность, участие в проектной деятельности и качество командного взаимодействия."},
+
+ {n:"08",type:"survey",label:"ОПРОСЫ",title:"Чек-лист знаний, умений, навыков",
+  desc:"Опрос руководителя, в котором оценивается соответствие сотрудника профессиональным требованиям из профиля должности.",
+  format:"Онлайн-анкета / устное интервью",time:"15 мин / 20 – 30 мин",
+  result:"Перечень дефицитов · уровень проф. компетенций по шкале 0–3",
+  fit:"Текущая должность · целевая должность · кадровый резерв · обязательное обучение · перевод · повышение категории",
+  full:"Руководитель оценивает соответствие профессиональным требованиям из профиля должности. Инструмент показывает разрыв по профессиональным компетенциям для текущей или целевой должности. Может применяться в проектах кадрового резерва, для плана обязательного обучения, перевода или повышения категории."},
+
+ {n:"09",type:"test",label:"ТЕСТИРОВАНИЕ",title:"Банк кейс-тестов на основе корпоративной модели компетенций",
+  desc:"Кейс-тесты, в которых участник решает проблемные ситуации с помощью ранжирования нескольких предложенных вариантов действий.",
+  format:"Онлайн",time:"1 ч 30 мин · 27 кейсов",
+  result:"Соответствие установок и знаний индикаторам поведения · шкала 0 – 3",
+  fit:"Корпоративные компетенции · лидерство · результат · улучшения · взаимодействие · программа обучения soft skills",
+  full:"Сотрудник проходит 27 кейсов – по 3 на каждую компетенцию. Инструмент позволяет оценить уровень выраженности корпоративных компетенций, установки и склонности к определённым моделям поведения, а также использовать результаты для обобщённого анализа команды и как часть комплексной диагностики."},
+
+ {n:"10",type:"complex",label:"КОМПЛЕКСНАЯ ОЦЕНКА",title:"Ассесмент-центр для ТОП-менеджмента и среднего менеджмента",
+  desc:"Метод комплексной оценки персонала, основанный на использовании взаимодополняющих методик для оценки реальных качеств, психологических и профессиональных особенностей, соответствия требованиям должности и потенциальных возможностей.",
+  format:"Очный или онлайн",time:"1 рабочий день · группа 5 – 6 человек",
+  result:"Компетенции 0 – 3 · лидерский потенциал · командные роли · ИПР · тренинговый план",
+  fit:"Корпоративные компетенции · потенциальные лидеры · командные роли",
+  full:"Комплексная оценка с использованием взаимодополняющих методик, ориентированная на оценку реальных качеств работников, их психологических и профессиональных особенностей, соответствия требованиям должностных позиций и выявление потенциальных возможностей."}
+];
+
+const grid=document.getElementById("grid");
+function render(filter="all"){
+ grid.innerHTML=services.filter(s=>filter==="all"||s.type===filter).map(s=>`
+ <article class="card">
+   <div class="card-top"><div class="type">${s.label}</div><div class="num">${s.n}</div></div>
+   <h2>${s.title}</h2><div class="desc">${s.desc}</div>
+   <div class="meta"><span class="tag">${s.format}</span><span class="tag">${s.time}</span></div>
+   <div class="card-bottom"><div class="result">Результат:<b>${s.result}</b></div><button class="more" onclick="openService('${s.n}')">Подробнее →</button></div>
+ </article>`).join("");
+}
+document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
+ document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active")); btn.classList.add("active"); render(btn.dataset.filter);
+}));
+function openService(n){
+ const s=services.find(x=>x.n===n);
+ document.getElementById("modalContent").innerHTML=`
+ <div class="type">${s.label}</div><h2>${s.title}</h2><p class="lead">${s.full}</p>
+ <div class="details">
+   <div class="detail"><span>Подходит для</span><b>${s.fit}</b></div>
+   <div class="detail"><span>Результат</span><b>${s.result}</b></div>
+   <div class="detail"><span>Формат</span><b>${s.format}</b></div>
+   <div class="detail"><span>Продолжительность</span><b>${s.time} на сотрудника</b></div>
+ </div>
+ <button class="cta" onclick="openContact()">Связаться со специалистом</button>`;
+ document.getElementById("modal").classList.add("open");
+ keepRussianPrepositionsWithNextWord(document.getElementById("modal"));
+}
+function openContact(){
+ document.getElementById("modalContent").innerHTML=`
+ <div class="type">КОНТАКТЫ</div><h2>Связаться со специалистом</h2>
+ <p class="lead">Свяжитесь со специалистом, чтобы обсудить задачу и подобрать подходящий инструмент оценки.</p>
+ <div class="contact-card">
+   <div class="contact-person">
+     <div class="contact-avatar">ФИ</div>
+     <div><strong>Имя Фамилия</strong><span>Специалист по оценке персонала</span></div>
+   </div>
+   <div class="contact-list">
+     <a href="mailto:email@example.ru"><span>Электронная почта</span><b>email@example.ru</b></a>
+     <a href="tel:+70000000000"><span>Телефон</span><b>+7 000 000 00 00</b></a>
+   </div>
+ </div>`;
+ document.getElementById("modal").classList.add("open");
+ keepRussianPrepositionsWithNextWord(document.getElementById("modal"));
+}
+function closeModal(){document.getElementById("modal").classList.remove("open")}
+document.getElementById("modal").addEventListener("click",e=>{if(e.target.id==="modal")closeModal()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+render();
+
+function keepRussianPrepositionsWithNextWord(root){
+  const prepositions = /(^|\s)(а|и|в|во|на|к|ко|с|со|у|о|об|обо|от|из|за|до|для|при|без|под|над|перед|через|между|про|по)(\s+)/gi;
+  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{
+    acceptNode(node){
+      const p=node.parentElement;
+      if(!p || p.closest("script,style") || p.isContentEditable) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+  const nodes=[];
+  while(walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(node=>{
+    node.nodeValue=node.nodeValue.replace(prepositions,(m,start,prep,space)=>start+prep+"\u00A0");
+  });
+}
+keepRussianPrepositionsWithNextWord(document.body);
+</script>
+</body>
+</html>
